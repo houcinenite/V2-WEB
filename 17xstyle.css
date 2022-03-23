@@ -501,19 +501,22 @@ section{
 }
 
 button{
-    padding: 12px 20px;
-    font-size: 20px;
-    outline: none;
-    border: none;
-    background-color: #4070f4;
-    color: #fff;
-    border-radius: 12px;
-    cursor: pointer;
-    transition: 0.3s;
+    color:#fff  ;
+    background-color: #2A47FF;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
 }
 
 button:hover{
-    background-color: #0e4bf1;
+    background-color: #001284;
+    transform: scale(1.1);
 }
 
 .toast.active ~ button{
