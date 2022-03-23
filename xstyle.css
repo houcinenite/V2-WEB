@@ -5,11 +5,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth ;
+    scroll-behavior: smooth;
 }
 
 header{
-    background-color: #45454F;
+    background-color: rgb(233, 233, 233);
     width: 100%;
     position: fixed;
     z-index: 999;
@@ -21,15 +21,14 @@ header{
 
 .logo{
     text-decoration: none;
-    color: #ffffff;
+    color: #0C23E5;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.8em;
-    
 }
 
 .navigation a{
-    color: #ffffff;
+    color: #0C23E5;
     text-decoration: none;
     font-size: 1.1em;
     font-weight: 500;
@@ -37,7 +36,7 @@ header{
 }
 
 .navigation a:hover{
-    color: #98999c;
+    color: #001284;
 }
 
 
@@ -50,27 +49,27 @@ section{
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background-image: url(https://www14.0zz0.com/2022/03/19/14/314196068.gif);    
+    background-color: #001aff27;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
 .main h2 {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-size: 1.4em;
     font-weight: 500;
 }
 .main h2 span {
     display: inline-block;
     margin-top: 10px;
-    color: #fff;
+    color: #2A47FF;
     font-size: 3em;
     font-weight: 600;
 }
 
 .main h3 {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-size: 2em;
     font-weight: 700;
     letter-spacing: 1px;
@@ -99,7 +98,7 @@ section{
 
 
 .social-icons a {
-    color: #ffffff;
+    color: #000;
     font-size: 1.7em;
     padding-right: 30px;
 }
@@ -107,14 +106,10 @@ section{
 .title {
     display: flex;
     justify-content: center;
-    color: #ffffff;
+    color: #0C23E5;
     font-size: 2.2em;
     font-weight: 800;
     margin-bottom: 30px;
-}
-
-.cards {
-    background-color: #606063;
 }
 
 .content {
@@ -150,14 +145,14 @@ section{
 }
 
 .info h3{
-    color: #45454F;
+    color: #2A47FF;
     font-size: 1.2em;
     font-weight:700;
     margin: 10px;
 }
 
 .projects {
-    background-color: #606063;
+    background-color: #000016;
 }
 
 .projects .content {
@@ -228,7 +223,13 @@ section{
 }
 
 .card-contact {
-    background-color: #606063;
+    background-color: #fff;
+    box-shadow: 0 5px 25px rgba(10 10 10 / 25%);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    transition: 0.7s ease;
+
 }
 
 .card:hover {
@@ -236,15 +237,15 @@ section{
 }
 
 .footer {
-    background-color: #45454F;
-    color: #ffffff;
+    background-color: rgb(233, 233, 233);
+    color: #2A47FF;
     padding: 2em;
     display: flex;
     justify-content: space-between;
 }
 
 .footer-social-icons a {
-    color: #ffffff;
+    color: #2A47FF;
     font-size: 1.7em;
     padding-right: 30px;
 }
@@ -257,13 +258,13 @@ section{
 
 .footer-title span {
     text-decoration: none;
-    color: #ffffff;
+    color: #0C23E5;
     
 }
 
 .footer-btn{
     text-decoration: none;
-    color: #ffffff;
+    color: #0C23E5;
     font-weight: 600;
 
 }
@@ -271,15 +272,6 @@ section{
 .footer-btn:hover{
     transform: scale(1.1);
 
-}
-
-.feet {
-    text-decoration: none;
-    color: #ffffff;
-}
-
-.feet:hover {
-    color: #8d8d8d;
 }
 
 .download-card {
@@ -295,79 +287,124 @@ section{
     border-radius: 15px;
 }
 
-
-.app {
-    background-color: #45454F;
+.content-app{
+    padding: 70px 0;
+    border: 3px solid green;
+    text-align: center;
 }
 
-.app .content {
-    margin-top: 30px;
+.toast{
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    border-radius: 12px;
+    background: #fff;
+    padding: 20px 35px 20px 25px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    border-left: 6px solid #4070f4;
+    overflow: hidden;
+    transform: translateX(calc(100% + 30px));
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
 }
 
-.app-card {
-    background-color: #fff;
-    width: 21.25em;
-    box-shadow: 0 5px 25px rgba(10 10 10 / 25%);
-    border-radius: 10px;
-    padding: 25px;
-    margin: 15px;
-    transition: 0.7s ease;
+.toast.active{
+    transform: translateX(0%);
+}
+
+.toast .toast-content{
+    display: flex;
     align-items: center;
 }
 
-.app-card:hover{
-    transform: scale(1.1);
-}
-
-.app-image {
-    opacity: 0.9;
-    text-align: center; 
-}
-
-.app-image img{
-    width: 70%;
-    text-align: center; 
-}
-
-.app-info{
-    padding: 1em;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.app-category {
-    font-size: 0.8em;
-    color: #000;
-    text-align: center;
-    margin-bottom: 10px;
-
-}
-
-.app-title {
+.toast-content .check{
     display: flex;
-    justify-content: space-between;
-    text-transform: uppercase;
-    font-weight: 800;
-    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    background-color: #4070f4;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 50%;
 }
 
-.dow-btn {
-    color:#fff  ;
-    background-color: #2A47FF;
-    text-decoration: none;
-    font-size: 1.1em;
+.toast-content .message{
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+
+.message .text{
+    font-size: 20px;
+    font-weight: 400;;
+    color: #666666;
+}
+
+.message .text.text-1{
     font-weight: 600;
-    display: inline-block;
-    padding: 0.9375em 2.1875em;
-    letter-spacing: 1px;
-    border-radius: 15px;
-    margin-bottom: 40px;
-    transition: 0.7s ease;
+    color: #333;
 }
 
-.dow-btn:hover {
-    background-color: #001284;
-    transform: scale(1.1);
+.toast .close{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    padding: 5px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.toast .close:hover{
+    opacity: 1;
+}
+
+.toast .progress{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: #ddd;
+}
+
+.toast .progress:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #4070f4;
+}
+
+.progress.active:before{
+    animation: progress 5s linear forwards;
+}
+
+@keyframes progress {
+    100%{
+        right: 100%;
+    }
+}
+
+button{
+    padding: 12px 20px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    background-color: #4070f4;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: #0e4bf1;
+}
+
+.toast.active ~ button{
+    pointer-events: none;
 }
 
 @media (max-width:1023px) {
