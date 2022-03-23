@@ -5,11 +5,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth ;
 }
 
 header{
-    background-color: rgb(233, 233, 233);
+    background-color: #45454F;
     width: 100%;
     position: fixed;
     z-index: 999;
@@ -21,14 +21,15 @@ header{
 
 .logo{
     text-decoration: none;
-    color: #0C23E5;
+    color: #ffffff;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.8em;
+    
 }
 
 .navigation a{
-    color: #0C23E5;
+    color: #ffffff;
     text-decoration: none;
     font-size: 1.1em;
     font-weight: 500;
@@ -36,7 +37,7 @@ header{
 }
 
 .navigation a:hover{
-    color: #001284;
+    color: #98999c;
 }
 
 
@@ -49,27 +50,27 @@ section{
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background-color: #001aff27;
+    background-image: url("../../New Generation V2/Images/back.gif");    
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
 .main h2 {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 1.4em;
     font-weight: 500;
 }
 .main h2 span {
     display: inline-block;
     margin-top: 10px;
-    color: #2A47FF;
+    color: #fff;
     font-size: 3em;
     font-weight: 600;
 }
 
 .main h3 {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 2em;
     font-weight: 700;
     letter-spacing: 1px;
@@ -98,7 +99,7 @@ section{
 
 
 .social-icons a {
-    color: #000;
+    color: #ffffff;
     font-size: 1.7em;
     padding-right: 30px;
 }
@@ -106,10 +107,14 @@ section{
 .title {
     display: flex;
     justify-content: center;
-    color: #0C23E5;
+    color: #ffffff;
     font-size: 2.2em;
     font-weight: 800;
     margin-bottom: 30px;
+}
+
+.cards {
+    background-color: #606063;
 }
 
 .content {
@@ -122,7 +127,7 @@ section{
 .card {
     background-color: #fff;
     width: 21.25em;
-    box-shadow: 0 5px 25px rgba(10 10 10 / 25%);
+    box-shadow: 0 25px 25px rgba(10 10 10 / 25%);
     border-radius: 10px;
     padding: 25px;
     margin: 15px;
@@ -145,14 +150,14 @@ section{
 }
 
 .info h3{
-    color: #2A47FF;
+    color: #45454F;
     font-size: 1.2em;
     font-weight:700;
     margin: 10px;
 }
 
 .projects {
-    background-color: #000016;
+    background-color: #606063;
 }
 
 .projects .content {
@@ -223,13 +228,7 @@ section{
 }
 
 .card-contact {
-    background-color: #fff;
-    box-shadow: 0 5px 25px rgba(10 10 10 / 25%);
-    border-radius: 10px;
-    padding: 15px;
-    margin: 10px;
-    transition: 0.7s ease;
-
+    background-color: #606063;
 }
 
 .card:hover {
@@ -237,15 +236,15 @@ section{
 }
 
 .footer {
-    background-color: rgb(233, 233, 233);
-    color: #2A47FF;
+    background-color: #45454F;
+    color: #ffffff;
     padding: 2em;
     display: flex;
     justify-content: space-between;
 }
 
 .footer-social-icons a {
-    color: #2A47FF;
+    color: #ffffff;
     font-size: 1.7em;
     padding-right: 30px;
 }
@@ -258,13 +257,13 @@ section{
 
 .footer-title span {
     text-decoration: none;
-    color: #0C23E5;
+    color: #ffffff;
     
 }
 
 .footer-btn{
     text-decoration: none;
-    color: #0C23E5;
+    color: #ffffff;
     font-weight: 600;
 
 }
@@ -272,6 +271,15 @@ section{
 .footer-btn:hover{
     transform: scale(1.1);
 
+}
+
+.feet {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.feet:hover {
+    color: #8d8d8d;
 }
 
 .download-card {
@@ -287,10 +295,79 @@ section{
     border-radius: 15px;
 }
 
-.content-app{
-    padding: 70px 0;
-    border: 3px solid green;
+
+.app {
+    background-color: #45454F;
+}
+
+.app .content {
+    margin-top: 30px;
+}
+
+.app-card {
+    background-color: #fff;
+    width: 21.25em;
+    box-shadow: 0 25px 25px rgba(10 10 10 / 25%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+    align-items: center;
+}
+
+.app-card:hover{
+    transform: scale(1.1);
+}
+
+.app-image {
+    opacity: 0.9;
+    text-align: center; 
+}
+
+.app-image img{
+    width: 70%;
+    text-align: center; 
+}
+
+.app-info{
+    padding: 1em;
     text-align: center;
+    margin-bottom: 10px;
+}
+
+.app-category {
+    font-size: 0.8em;
+    color: #000;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+.app-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.dow-btn {
+    color:#fff  ;
+    background-color: #2A47FF;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+}
+
+.dow-btn:hover {
+    background-color: #001284;
+    transform: scale(1.1);
 }
 
 .toast{
@@ -407,6 +484,7 @@ button:hover{
     pointer-events: none;
 }
 
+
 @media (max-width:1023px) {
     header{
         padding: 12px 20px;
@@ -436,6 +514,7 @@ button:hover{
         align-items: center;
     }
 }
+
 
 @media (max-width:641px) {
     body{
