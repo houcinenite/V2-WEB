@@ -500,23 +500,12 @@ section{
     }
 }
 
-button{
-    color:#fff  ;
-    background-color: #2A47FF;
-    text-decoration: none;
-    font-size: 1.1em;
-    font-weight: 600;
-    display: inline-block;
-    padding: 0.9375em 2.1875em;
-    letter-spacing: 1px;
-    border-radius: 15px;
-    margin-bottom: 40px;
-    transition: 0.7s ease;
-}
-
-button:hover{
-    background-color: #001284;
-    transform: scale(1.1);
+.button {     
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;        
 }
 
 .toast.active ~ button{
