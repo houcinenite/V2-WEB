@@ -371,7 +371,7 @@ section{
 }
 
 .toast{
-    position: inital;
+    position: static;
     top: 25px;
     right: 30px;
     border-radius: 12px;
