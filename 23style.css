@@ -353,7 +353,7 @@ section{
 
 .dow-btn {
     color:#fff  ;
-    background-color: #2A47FF;
+    background-color: #000000;
     text-decoration: none;
     font-size: 1.1em;
     font-weight: 600;
@@ -366,8 +366,13 @@ section{
 }
 
 .dow-btn:hover {
-    background-color: #001284;
+    background-color: #7e7e7e;
     transform: scale(1.1);
+}
+
+.dow-img{
+    width: 100px;
+    height: auto;  
 }
 
 @media (max-width:1023px) {
@@ -528,90 +533,4 @@ section{
     
     
     
-*{margin:0;}.s-soft{ position: fixed; top: 100px ;
-             left: 10; z-index: 1000; transition:all linear 0.2s ;}
-            .s-soft a:first-child{ border-radius: 0 5px 0 0;}
-            .s-soft a:last-child{ border-radius: 0 0 5px 0;}
-            .s-item { display:block; width: 60px;height: 60px;
-            color: white; font-size: 25px;line-height: 60px;
-            text-align: center;transition:all linear 0.2s ;}
-            .s-item:hover { width:110px;
-            border-radius:0px 20px 20px 0px;  }
-            #so-open { position: fixed; top: 100px ;
-            left: -90px;border-radius:0 30px 30px 0;
-            transition:all linear 0.2s ;}
-            .facebook {background-color:  #3b5999;}
-            .twitter {background-color: #3AAFD6;}
-            .github {background-color: #504c4d;}
-            .whatsapp{background-color: #22940c;}
-            .instagram{background-color:  #c32aa3;}
-            .so-close{background-color:  #faf2f8;}
-            .so-open{background-color:  #ffffff;}
-            .so-collapse{left: -60px; }
 
-    
-   @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-* {
-  font-family: 'Open Sans', 'sans-serif';
-}
-
-html, body {
-  overflow: hidden;
-}
-
-ul {
-  width: 100%;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-li {
-  display: inline-block;
-  margin: 10px;
-}
-
-.download {
-  width: 200px;
-  height: 75px;
-  background: black;
-  float: left;
-  border-radius: 5px;
-  position: relative;
-  color: #fff;
-  cursor: pointer;
-  border: 1px solid #fff;
-}
-
-.download > .fa {
-  color: #fff;
-  position: absolute;
-  top: 50%;
-  left: 15px;
-  transform: translateY(-50%);
-}
-
-.df,
-.dfn {
-  position: absolute;
-  left: 70px;
-}
-
-.df {
-  top: 20px;
-  font-size: .68em;
-}
-
-.dfn {
-  top: 33px;
-  font-size: 1.08em;
-}
-
-.download:hover {
-  -webkit-filter: invert(100%);
-  filter: invert(100%);
-}
