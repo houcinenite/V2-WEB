@@ -534,7 +534,7 @@ section{
     
     
     
-    ul {
+ul{
   width: 100%;
   text-align: center;
   margin: 0;
@@ -590,6 +590,12 @@ li {
   filter: invert(100%);
 }
     
+
+.down{
+    color: #ffffff;
+    font-size: 1.7em;
+    padding-right: 30px;
+}
     
     
 
