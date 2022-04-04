@@ -9,7 +9,7 @@
 }
 
 header{
-    background-color: #45454F;
+    background-color: transparent;
     width: 100%;
     position: fixed;
     z-index: 999;
